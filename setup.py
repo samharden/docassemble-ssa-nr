@@ -55,5 +55,5 @@ setup(name='docassemble.ssa.nr',
       namespace_packages=['docassemble'],
       install_requires=[],
       zip_safe=False,
-      package_data=find_package_data(where='docassemble/ssa/', package='docassemble.ssa.nr'),
+      package_data=find_package_data(where='docassemble/ssa/nr/', package='docassemble.ssa.nr'),
      )
