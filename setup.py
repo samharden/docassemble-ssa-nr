@@ -42,7 +42,7 @@ def find_package_data(where='.', package='', exclude=standard_exclude, exclude_d
                 out.setdefault(package, []).append(prefix+name)
     return out
 
-setup(name='docassemble.ssa.nr',
+setup(name='docassemble.ssanr',
       version='0.0.4',
       description=('Shared code for Social Security interviews, working to make it not apply to not required inputs'),
       long_description=u'# docassemble.ssa.nr\r\n\r\nShared code for Social Security interviews',
@@ -55,5 +55,5 @@ setup(name='docassemble.ssa.nr',
       namespace_packages=['docassemble'],
       install_requires=[],
       zip_safe=False,
-      package_data=find_package_data(where='docassemble/ssa/nr/', package='docassemble.ssa.nr'),
+      package_data=find_package_data(where='docassemble/ssanr/', package='docassemble.ssanr'),
      )
