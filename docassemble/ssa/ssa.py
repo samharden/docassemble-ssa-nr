@@ -7,7 +7,7 @@ def is_valid_ssn(x):
     #return True # speed up testing
     valid_ssn=re.compile(r'^\d{3}-\d{2}-\d{4}$')
     if not bool(re.match(valid_ssn,x)):
-        if len(x) == 0:
+        if len(x) >= 0:
             validation_error("Write the Social Security Number like this: XXX-XX-XXXX")
     return True
 
